@@ -84,7 +84,7 @@ const handleSubmit = async (e) => {
   
 
   //fecth data from server => bot's response
-  const response = await fetch('https://chat-gpt-aifc-backend.onrender.com', {
+  const response = await fetch('https://chat-gpt-ai-fc-backend.onrender.com', {
     method: 'POST',
     headers: {
       'content-type': 'application/json'
