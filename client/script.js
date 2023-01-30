@@ -12,7 +12,7 @@ function loader(element){
   element = {
     textContent: ''
   }
-  element.textContent = '';
+  element.textContext = '';
   loadInterval = setInterval(() => {
     element.textContent += '.';
 
@@ -27,7 +27,7 @@ function typeText(element, text) {
   let index = 0;
   let interval = setInterval(() => {
     if(index < text.length) {
-      element.innerHTML += text.chartAt(index);
+      element.innerHTML += text.charAt(index);
       element ++;
     } else {
       clearInterval(interval);
