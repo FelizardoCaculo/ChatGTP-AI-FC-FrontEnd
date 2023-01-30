@@ -9,6 +9,8 @@
 
 body {
   background: #343541;
+  min-height: 100vh;
+  max-width: fit-content;
 }
 
 #app {
@@ -147,4 +149,30 @@ button {
 form img {
   width: 30px;
   height: 30px;
+}
+
+footer {
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  opacity: .7;
+  transition: opacity 400ms;
+}
+
+footer:hover {
+  opacity: 1;
+}
+
+footer p {
+  color: white;
+}
+
+footer p a {
+  color: #db33c5;
+  text-decoration: none;
+  font-weight: 700;
 }
